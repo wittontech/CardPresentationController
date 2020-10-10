@@ -216,9 +216,10 @@ private extension CardAnimator {
 				guard let self = self else { return }
 
 				self.insetBackCards(of: sourceCardPresentationController)
-				fromView.frame = fromEndFrame
+				// Stay still for back view 
+				// fromView.frame = fromEndFrame
 				toView.frame = toEndFrame
-				fromView.cardMaskTopCorners(using: self.cornerRadius)
+				// fromView.cardMaskTopCorners(using: self.cornerRadius)
 				toView.cardMaskTopCorners(using: self.cornerRadius)
 
 				fromView.alpha = self.backFadeAlpha
